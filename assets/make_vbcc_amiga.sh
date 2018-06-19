@@ -1,6 +1,4 @@
 #! /usr/bin/env bash
 
-cd /curr
-ls -l
-
+cd /work
 make "$@"

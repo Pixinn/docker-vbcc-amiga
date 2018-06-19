@@ -1,0 +1,1 @@
+# Building the containerdocker build . -t *IMAGE*# Running cmakedocker run --rm -it -v *SOURCES_DIR*:/src -v *WORK_DIR*:/work *IMAGE* cmake-amiga [options]## Options* CONFIG=kick13 to build for kickstart 1.3* CONFIG=aosm68k to build AmigaOS 3.x (default)# Running makedocker run --rm -it -v *SOURCES_DIR*:/src -v *WORK_DIR*:/work *IMAGE* make-amiga [options]
