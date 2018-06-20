@@ -1,0 +1,36 @@
+[1mdiff --git a/README.md b/README.md[m
+[1mindex ecd57f2..6f64c61 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -23,6 +23,9 @@[m [mThe image contains two scripts that you will use to generate the binaries:[m
+ [m
+ > cmake-amiga [PATH_TO_CMAKELISTS.TXT] [OPTIONS][m
+ [m
+[32m+[m[32mThe arguments shall be in that order.[m
+[32m+[m
+[32m+[m
+ ## Options[m
+ [m
+ * -DCONFIG=aosm68k to build for AmigaOS 3.x (**default**)[m
+[36m@@ -33,3 +36,4 @@[m [mThe image contains two scripts that you will use to generate the binaries:[m
+ [m
+ > make-amiga [ARGS][m
+ [m
+[32m+[m[32mIn order to work, a file named *SOURCES_DIR* must lay alongside the Makefile. This file is produced by *cmake-amiga*.[m
+\ No newline at end of file[m
+[1mdiff --git a/assets/user_cmake.sh b/assets/user_cmake.sh[m
+[1mindex 6a1f3e0..333f08a 100644[m
+[1m--- a/assets/user_cmake.sh[m
+[1m+++ b/assets/user_cmake.sh[m
+[36m@@ -3,6 +3,11 @@[m
+ # Sanity[m
+ if [ "$#" -lt 1 ]; then[m
+     echo "Where is the CMakelists.txt?"[m
+[32m+[m[32m    echo "Usage:"[m
+[32m+[m[32m    echo " "[m
+[32m+[m[32m    echo "    cmake-amiga <path-to-source> [options]"[m
+[32m+[m[32m    echo " "[m
+[32m+[m[32m    echo "In that order!"[m
+     exit -1[m
+ fi[m
+ # Replace front . and .. as they are not accepted by Docker[m

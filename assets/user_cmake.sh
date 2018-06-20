@@ -3,6 +3,11 @@
 # Sanity
 if [ "$#" -lt 1 ]; then
     echo "Where is the CMakelists.txt?"
+    echo "Usage:"
+    echo " "
+    echo "    cmake-amiga <path-to-source> [options]"
+    echo " "
+    echo "In that order!"
     exit -1
 fi
 # Replace front . and .. as they are not accepted by Docker

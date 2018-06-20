@@ -23,6 +23,9 @@ The image contains two scripts that you will use to generate the binaries:
 
 > cmake-amiga [PATH_TO_CMAKELISTS.TXT] [OPTIONS]
 
+The arguments shall be in that order.
+
+
 ## Options
 
 * -DCONFIG=aosm68k to build for AmigaOS 3.x (**default**)
@@ -33,3 +36,4 @@ The image contains two scripts that you will use to generate the binaries:
 
 > make-amiga [ARGS]
 
+In order to work, a file named *SOURCES_DIR* must lay alongside the Makefile. This file is produced by *cmake-amiga*.
