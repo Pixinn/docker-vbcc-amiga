@@ -3,6 +3,8 @@
 FROM ubuntu
 ENV DEBIAN_FRONTEND noninteractive
 
+LABEL "Author"="Christophe Meneboeuf <christophe@xtof.info>"
+
 # DEPENDENCIES
 
 RUN apt-get update && apt-get upgrade -y

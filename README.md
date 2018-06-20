@@ -4,9 +4,9 @@ Your projects shall be built using **cmake**.
 
 # Build the container
 
-docker build . -t **vbcc_mk68**
+docker build . -t **pixinn/vbcc-amiga**
 
-The image name shall be **vbcc_mk68**!
+The image name shall be **pixinn/vbcc-amiga**!
 
 # Get the scripts
 
@@ -14,9 +14,9 @@ The image contains two scripts that you will use to generate the binaries:
 * *cmake-amiga* instead of the native cmake
 * *make-amiga* instead of the native make
 
-> docker run --rm vbcc_m68k cat cmake-amiga > cmake-amiga
+> docker run --rm pixinn/vbcc-amiga cat cmake-amiga > cmake-amiga
 > chmod +x cmake-amiga
-> docker run --rm vbcc_m68k cat make-amiga > cmake-amiga
+> docker run --rm pixinn/vbcc-amiga cat make-amiga > cmake-amiga
 > chmod +x make-amiga
 
 # Run cmake
@@ -25,7 +25,7 @@ The image contains two scripts that you will use to generate the binaries:
 
 ## Options
 
-* -DCONFIG=aosm68k to build AmigaOS 3.x (**default**)
+* -DCONFIG=aosm68k to build for AmigaOS 3.x (**default**)
 * -DCONFIG=kick13 to build for kickstart 1.3
 
 

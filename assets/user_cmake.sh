@@ -19,6 +19,6 @@ elif [[ ${dir} == ".." ]] ; then
     set -- ${PWD}/.. "${@:2}"
 fi
 
-docker run --rm -it -v ${1}:/src -v ${PWD}:/work vbcc_m68k cmake_vbcc_amiga.sh "${@:2}"
+docker run --rm -it -v ${1}:/src -v ${PWD}:/work pixinn/vbcc-amiga cmake_vbcc_amiga.sh "${@:2}"
 # sources location must be saved to be used by make.sh
 echo ${1} > SOURCES_DIR

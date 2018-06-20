@@ -34,4 +34,4 @@ if [ ! -e ${dir}/SOURCES_DIR ] ; then
 fi
 
 sources=$( cat ${dir}/SOURCES_DIR )
-docker run --rm -it -v ${sources}:/src -v ${dir}:/work vbcc_m68k make_vbcc_amiga.sh ${options}
+docker run --rm -it -v ${sources}:/src -v ${dir}:/work pixinn/vbcc-amiga make_vbcc_amiga.sh ${options}
