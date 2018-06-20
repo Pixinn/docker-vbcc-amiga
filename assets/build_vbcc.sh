@@ -27,7 +27,7 @@ cp bin/vbcc* bin/vc bin/vprof ${VBCC}/bin
 cd /tmp
 wget http://server.owl.de/~frank/vbcc/2017-08-14/vbcc_target_m68k-amigaos.lha
 wget http://server.owl.de/~frank/vbcc/2017-08-14/vbcc_target_m68k-kick13.lha
-wget http://server.owl.de/~frank/vbcc/2014-12-30/vbcc_unix_config.tar.gz
+wget http://server.owl.de/~frank/vbcc/2017-08-14/vbcc_unix_config.tar.gz
 lha x vbcc_target_m68k-amigaos.lha
 lha x vbcc_target_m68k-kick13.lha
 tar -xzf vbcc_unix_config.tar.gz

@@ -17,10 +17,6 @@ ADD assets/script_s.exp /script_s.exp
 ADD assets/vbcc_amiga.cmake ${VBCC}
 RUN chmod +x /*.sh && /build_vbcc.sh
 
-# there is a bug in the current kick13 config
-# RUN sed -i -e 's/m68k-amigaos/m68k-kick13/g' ${VBCC}/config/kick13
-# RUN sed -i -e 's/startup13.o/minstart.o/g' ${VBCC}/config/kick13
-
 # FINAL STEP
 ADD assets/cmake_vbcc_amiga.sh /cmake-amiga
 ADD assets/make_vbcc_amiga.sh /make-amiga
