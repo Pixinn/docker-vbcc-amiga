@@ -17,8 +17,14 @@ ADD assets/script_s.exp /script_s.exp
 ADD assets/vbcc_amiga.cmake ${VBCC}
 RUN chmod +x /*.sh && /build_vbcc.sh
 
-# FINAL STEP
-ADD assets/cmake_vbcc_amiga.sh /cmake-amiga
-ADD assets/make_vbcc_amiga.sh /make-amiga
+# FINAL STEPS
+
+# internal scripts
+ADD assets/cmake_vbcc_amiga.sh /cmake_vbcc_amiga.sh
+ADD assets/make_vbcc_amiga.sh /make_vbcc_amiga.sh
+# user scripts
+ADD assets/user_cmake.sh /cmake-amiga
+ADD assets/user_make.sh /make-amiga
+
 RUN chmod +x /*.sh
 ENV PATH=/:${VBCC}/bin:${PATH}
