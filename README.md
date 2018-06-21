@@ -16,7 +16,7 @@ The image contains two scripts that you will use to generate the binaries:
 
 > docker run --rm pixinn/vbcc-amiga cat cmake-amiga > cmake-amiga
 > chmod +x cmake-amiga
-> docker run --rm pixinn/vbcc-amiga cat make-amiga > cmake-amiga
+> docker run --rm pixinn/vbcc-amiga cat make-amiga > make-amiga
 > chmod +x make-amiga
 
 # Run cmake
