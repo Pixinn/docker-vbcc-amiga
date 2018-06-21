@@ -14,10 +14,11 @@ RUN apt-get install -y build-essential cmake lhasa unzip wget expect
 ENV VBCC /opt/vbcc
 RUN mkdir -p ${VBCC}/bin
 ADD assets/build_vbcc.sh /build_vbcc.sh
+RUN chmod +x /build_vbcc.sh
 ADD assets/script.exp /script.exp
 ADD assets/script_s.exp /script_s.exp
 ADD assets/vbcc_amiga.cmake ${VBCC}
-RUN chmod +x /*.sh && /build_vbcc.sh
+RUN /build_vbcc.sh
 
 # FINAL STEPS
 
