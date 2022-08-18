@@ -14,12 +14,16 @@ The image contains two scripts that you will use to generate the binaries:
 * *cmake-amiga* instead of the native cmake
 * *make-amiga* instead of the native make
 
-> docker run --rm pixinn/vbcc-amiga cat cmake-amiga > cmake-amiga
-> docker run --rm pixinn/vbcc-amiga cat make-amiga > make-amiga
+```bash
+docker run --rm pixinn/vbcc-amiga cat cmake-amiga > cmake-amiga
+docker run --rm pixinn/vbcc-amiga cat make-amiga > make-amiga
+```
 
 # cmake-amiga
 
-> cmake-amiga [PATH_TO_CMAKELISTS.TXT] [OPTIONS]
+```bash
+cmake-amiga [PATH_TO_CMAKELISTS.TXT] [OPTIONS]
+```
 
 The *PATH* shall be provided **before** the *OPTIONS*.
 
@@ -32,6 +36,8 @@ The *PATH* shall be provided **before** the *OPTIONS*.
 
 # make-amiga
 
-> make-amiga [ARGS]
+```bash
+make-amiga [ARGS]
+```
 
 In order to work, a file named *SOURCES_DIR* must lay alongside the Makefile. This file is produced by *cmake-amiga*.
